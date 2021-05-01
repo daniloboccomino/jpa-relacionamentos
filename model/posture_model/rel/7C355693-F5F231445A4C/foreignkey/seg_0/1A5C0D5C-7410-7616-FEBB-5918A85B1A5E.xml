@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1A5C0D5C-7410-7616-FEBB-5918A85B1A5E" containerWithKeyObject="D13C935C-128F-7CB7-1956-1DBA0824D7DF" localFKIndex="B1CC251D-C9AC-4F59-5F70-25278F54FAD9" name="TIP_POSTURE_FK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>B2042708-1EDC-FD9A-10CA-9CC68F7B6F52</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<referredTableLongName>POSTURE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C6D4866-B5E2-624E-EA85-BED754FF0515</referredTableID>
+<keyObject>C7E0EC3F-B95F-CA8F-A014-3EE47CF65DAC</keyObject>
+<referredKeyID>C7E0EC3F-B95F-CA8F-A014-3EE47CF65DAC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_posture</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

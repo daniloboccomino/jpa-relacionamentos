@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CDF7BAD5-C330-4143-A0CD-B69604E3081E" name="USER">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>449AF7FD-18C7-1761-668B-6D29AED487D9</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_user" id="292A68C2-F3E1-D5E3-76C6-88A51C5D61E2">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_email" id="36478847-F832-1535-AE46-407409AED3C7">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>6078B62D-8F49-C956-BAFF-08305A329D7E</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_password" id="56ED77E4-C6C9-1808-1D94-A52AF5DB6824">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>A9F2B03C-44C5-072F-CBBF-FB6542867422</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_cpf" id="F02CF449-0E6C-296F-15EB-6C03D77EF82D">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>93ED8724-9E28-218B-BFFE-D3F0F77987E5</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_phone" id="4DE04290-7CF7-83B6-9332-D51F50C8CA62">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>C417E00D-A53F-7C57-4E7A-8C2C92687D71</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_name" id="31E90D46-6C81-74A6-6759-945B9F85ABFC">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>7C467D92-2181-D781-F002-17519C2F84A7</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_gender" id="450816D1-28FA-A92F-8CF0-57EAC2C69F38">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>32E3E724-895F-5263-B901-80D66A6DF642</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7AE7E7B9-67E3-2E8B-13BA-1034BBBEF0CF" name="USER_PK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>7E9A78FA-20E4-146A-6A50-A9102C68B03D</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="292A68C2-F3E1-D5E3-76C6-88A51C5D61E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC2B373F-D3C5-090B-DB56-FBE62CA4A55A" name="USER_EMAIL_UN">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:28:58 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36478847-F832-1535-AE46-407409AED3C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

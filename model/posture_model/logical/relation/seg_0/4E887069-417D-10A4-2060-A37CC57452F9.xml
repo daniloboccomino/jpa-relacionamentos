@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_1" directorySegmentName="seg_0" id="4E887069-417D-10A4-2060-A37CC57452F9">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:10:30 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<sourcePk>7E9A78FA-20E4-146A-6A50-A9102C68B03D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>449AF7FD-18C7-1761-668B-6D29AED487D9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F1A96117-930E-5688-50A4-8B8A6BABC747</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

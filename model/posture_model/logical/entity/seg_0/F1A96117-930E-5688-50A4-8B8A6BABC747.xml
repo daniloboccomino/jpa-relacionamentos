@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1A96117-930E-5688-50A4-8B8A6BABC747" name="DAILY_SUMMARY">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 15:58:02 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_daily" id="2B921D6B-5D7C-DCB3-40E9-1AFECADC74D9">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 15:58:13 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_wrong_posture" id="D667AEE5-06ED-EFAE-176A-DCE1D7904684">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 15:58:24 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_alert_posture" id="8424DA1A-5BE8-B2EE-C835-B55F58D1E1B5">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:02:42 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_correct_posture" id="6E0FFF7F-2B7C-2E95-50C4-3B56984EE7BD">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:03:05 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_date" id="AE7B6127-5006-37B6-75B7-6F7CA6370553">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:03:36 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_user" id="916037A1-C19F-5505-F1DA-0700C1A03F8D">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:10:30 UTC</createdTime>
+<generatorID>4E887069-417D-10A4-2060-A37CC57452F9</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A9C7DEE-003A-D9F2-8F56-CC4D4C9D4384" name="DAILY_SUMMARY PK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 15:58:23 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2B921D6B-5D7C-DCB3-40E9-1AFECADC74D9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

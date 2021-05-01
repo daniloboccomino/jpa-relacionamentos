@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="posture_model" id="05C1806F-FFFF-E1A8-255E-B0B954324C71" version="3.5">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 15:37:04 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>05C1806F-FFFF-E1A8-255E-B0B954324C71</designId>
+</OSDM_Design>

@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D82A2E61-63CC-9B37-6342-750E1AA1EC68" name="TIP_POSTURE">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:08:28 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_tip" id="9928B5C2-C037-9B7F-98AA-28EC9C859AF6">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:13:52 UTC</createdTime>
+<generatorID>73F68C30-736C-EE76-7E92-55DF28386AFA</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>EDE687C5-A2BF-0A6F-2F49-2A94548AAA64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_posture" id="CE8518D4-D970-12FD-CDF0-CA1B01679430">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:14:06 UTC</createdTime>
+<generatorID>B2042708-1EDC-FD9A-10CA-9CC68F7B6F52</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>E640556E-BB01-FA94-8757-8E8F4CC18E25</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

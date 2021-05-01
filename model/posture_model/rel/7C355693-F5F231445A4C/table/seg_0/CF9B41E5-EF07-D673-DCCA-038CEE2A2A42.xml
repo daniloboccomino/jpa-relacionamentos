@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF9B41E5-EF07-D673-DCCA-038CEE2A2A42" name="CHAIR">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>68781D30-FA57-F94A-FDEB-FFE0451CCA54</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_chair" id="40C1CE1E-6F12-9C3C-DCE0-FD0E6E63DBBA">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>F3776602-3703-02A6-6DC3-3CDB33F4B4BA</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_brand" id="F49C735D-E9FE-1B9B-8FD0-935CC01DA592">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>93F2EC58-372A-814A-699E-E95776A856C2</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_model" id="2835E75C-D801-4071-416E-03E5AE6FA7B3">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>0C3FECBE-073A-1F00-7022-EA7345A342FB</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C97FEFB-4D79-6373-4F7E-D615AABEC056" name="CHAIR_PK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<generatorID>163C2CD4-79A6-78D0-27CD-787EADE8622E</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40C1CE1E-6F12-9C3C-DCE0-FD0E6E63DBBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
