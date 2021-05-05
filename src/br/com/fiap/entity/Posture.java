@@ -12,7 +12,9 @@
 package br.com.fiap.entity;
 
 import java.util.Calendar;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -20,6 +22,10 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -46,29 +52,32 @@ public class Posture {
 	@CreationTimestamp
 	private Calendar changeTime;
 	
-	/*
-	@OneToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name = "cd_user", nullable = false)
-	*/
-	@Column(name = "nm_name", nullable = false, length = 100)
-	private String user;
+	private User user;
+	
+	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinTable(name = "TC_TIP_POSTURE",
+				joinColumns = @JoinColumn(name = "cd_posture"),
+				inverseJoinColumns = @JoinColumn(name = "cd_tip"))
+	private List<Tip> tips;
 	
 	
 	public Posture() {
 		super();
 	}
 
-	public Posture(Position position, String user) {
+	public Posture(Position position, Calendar changeTime) {
 		super();
 		this.position = position;
-		this.user = user;
+		this.changeTime = changeTime;
 	}
 
-	public Posture(int id, Position position, String user) {
+	public Posture(int id, Position position, Calendar changeTime) {
 		super();
 		this.id = id;
 		this.position = position;
-		this.user = user;
+		this.changeTime = changeTime;
 	}
 	
 	
@@ -96,12 +105,20 @@ public class Posture {
 		this.changeTime = changeTime;
 	}
 	
-	public String getUser() {
+	public User getUser() {
 		return user;
 	}
 	
-	public void setUser(String user) {
+	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public List<Tip> getTips() {
+		return tips;
+	}
+
+	public void setTips(List<Tip> tips) {
+		this.tips = tips;
 	}
 
 }

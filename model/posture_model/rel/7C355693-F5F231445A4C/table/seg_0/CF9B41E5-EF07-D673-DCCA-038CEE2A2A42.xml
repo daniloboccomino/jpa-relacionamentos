@@ -44,6 +44,22 @@
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="cd_user" id="71C0A059-8D3F-263C-9565-E6BA58B3ADE8">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-05 01:36:10 UTC</createdTime>
+<generatorID>88A9F4B4-AD69-4E35-DFC4-DCFB1072857D</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9405D72-0D81-1D2F-D0ED-B77E8E9045A1" referredColumn="292A68C2-F3E1-D5E3-76C6-88A51C5D61E2"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="0C97FEFB-4D79-6373-4F7E-D615AABEC056" name="CHAIR_PK">
@@ -56,6 +72,28 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="40C1CE1E-6F12-9C3C-DCE0-FD0E6E63DBBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="056303ED-9BDE-8B6D-1792-7D0CCDDF2FB3" name="CHAIR_IDX">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-05 01:36:11 UTC</createdTime>
+<ownerDesignName>posture_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>AF5DB0E4-4F4C-06DB-6874-86C6552D43B3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="71C0A059-8D3F-263C-9565-E6BA58B3ADE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5833F02-D8A8-F4A0-36A2-8E1FC8FE5AE5" name="CHAIR_USER_FK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-05 01:36:10 UTC</createdTime>
+<generatorID>AF5DB0E4-4F4C-06DB-6874-86C6552D43B3</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71C0A059-8D3F-263C-9565-E6BA58B3ADE8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

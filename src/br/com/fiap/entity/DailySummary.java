@@ -18,6 +18,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -49,33 +51,28 @@ public class DailySummary {
 	@CreationTimestamp
 	private Calendar date;
 	
-	/*
-	@OneToOne(cascade = CascadeType.ALL)
+	@ManyToOne
 	@JoinColumn(name = "cd_user", nullable = false)
-	*/
-	@Column(name = "nm_name", nullable = false, length = 100)
-	private String user;
+	private User user;
 
 	
 	public DailySummary() {
 		super();
 	}
 	
-	public DailySummary(double wrongPosture, double alertPosture, double correctPosture, String user) {
+	public DailySummary(double wrongPosture, double alertPosture, double correctPosture) {
 		super();
 		this.wrongPosture = wrongPosture;
 		this.alertPosture = alertPosture;
 		this.correctPosture = correctPosture;
-		this.user = user;
 	}
 	
-	public DailySummary(int id, double wrongPosture, double alertPosture, double correctPosture, String user) {
+	public DailySummary(int id, double wrongPosture, double alertPosture, double correctPosture) {
 		super();
 		this.id = id;
 		this.wrongPosture = wrongPosture;
 		this.alertPosture = alertPosture;
 		this.correctPosture = correctPosture;
-		this.user = user;
 	}
 	
 	
@@ -119,11 +116,11 @@ public class DailySummary {
 		this.date = date;
 	}
 
-	public String getUser() {
+	public User getUser() {
 		return user;
 	}
 
-	public void setUser(String user) {
+	public void setUser(User user) {
 		this.user = user;
 	}
 

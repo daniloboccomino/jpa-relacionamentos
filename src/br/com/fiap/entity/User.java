@@ -11,6 +11,10 @@
 
 package br.com.fiap.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -18,6 +22,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -50,13 +56,31 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private Gender gender;
 	
-	/*
-	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-	private Posture posture;
+	@OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	private List<Posture> postures;
 	
-	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
-	private DailySummary dailySummary;
-	*/
+	@OneToMany(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	private List<DailySummary> dailySummaries;
+	
+	@OneToOne(mappedBy = "user", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	private Chair chair;
+	
+	
+	public void addPosture(Posture posture) {
+		if (postures == null) {
+			postures = new ArrayList<>();
+		}
+		postures.add(posture);
+		posture.setUser(this);
+	}
+	
+	public void addDailySummary(DailySummary dailySummary) {
+		if (dailySummaries == null) {
+			dailySummaries = new ArrayList<>();
+		}
+		dailySummaries.add(dailySummary);
+		dailySummary.setUser(this);
+	}
 	
 	
 	public User() {
@@ -139,6 +163,30 @@ public class User {
 	
 	public void setGender(Gender gender) {
 		this.gender = gender;
+	}
+	
+	public List<Posture> getPostures() {
+		return postures;
+	}
+	
+	public void setPostures(List<Posture> postures) {
+		this.postures = postures;
+	}
+	
+	public List<DailySummary> getDailySummaries() {
+		return dailySummaries;
+	}
+	
+	public void setDailySummaries(List<DailySummary> dailySummaries) {
+		this.dailySummaries = dailySummaries;
+	}
+
+	public Chair getChair() {
+		return chair;
+	}
+
+	public void setChair(Chair chair) {
+		this.chair = chair;
 	}
 
 }

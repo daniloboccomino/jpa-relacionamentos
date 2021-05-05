@@ -11,11 +11,14 @@
 
 package br.com.fiap.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -31,6 +34,9 @@ public class Tip {
 	
 	@Column(name = "ds_tip", nullable = false)
 	private String tip;
+	
+	@ManyToMany(mappedBy = "tips")
+	private List<Posture> postures;
 	
 	
 	public Tip() {
@@ -63,6 +69,14 @@ public class Tip {
 
 	public void setTip(String tip) {
 		this.tip = tip;
+	}
+
+	public List<Posture> getPostures() {
+		return postures;
+	}
+
+	public void setPostures(List<Posture> postures) {
+		this.postures = postures;
 	}	
 
 }

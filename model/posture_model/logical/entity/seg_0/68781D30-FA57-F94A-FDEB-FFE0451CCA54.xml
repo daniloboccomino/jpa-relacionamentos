@@ -54,6 +54,21 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cd_user" id="88A9F4B4-AD69-4E35-DFC4-DCFB1072857D">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-05 01:35:04 UTC</createdTime>
+<generatorID>AF5DB0E4-4F4C-06DB-6874-86C6552D43B3</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="163C2CD4-79A6-78D0-27CD-787EADE8622E" name="CHAIR PK">

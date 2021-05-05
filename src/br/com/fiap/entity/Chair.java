@@ -11,11 +11,14 @@
 
 package br.com.fiap.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -34,6 +37,10 @@ public class Chair {
 	
 	@Column(name = "nm_model", nullable = false, length = 100)
 	private String model;
+	
+	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+	@JoinColumn(name = "cd_user", nullable = false)
+	private User user;
 	
 	
 	public Chair() {
@@ -76,6 +83,14 @@ public class Chair {
 
 	public void setModel(String model) {
 		this.model = model;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 }
