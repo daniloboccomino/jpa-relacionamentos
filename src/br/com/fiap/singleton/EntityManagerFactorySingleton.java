@@ -9,7 +9,7 @@
  * @since Apr 14, 2021
  */
 
-package br.com.fiap;
+package br.com.fiap.singleton;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;

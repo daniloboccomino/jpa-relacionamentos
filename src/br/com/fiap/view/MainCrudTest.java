@@ -13,7 +13,6 @@ package br.com.fiap.view;
 
 import javax.persistence.EntityManager;
 
-import br.com.fiap.EntityManagerFactorySingleton;
 import br.com.fiap.dao.ChairDao;
 import br.com.fiap.dao.DailySummaryDao;
 import br.com.fiap.dao.PostureDao;
@@ -33,6 +32,7 @@ import br.com.fiap.entity.Tip;
 import br.com.fiap.entity.User;
 import br.com.fiap.exception.CommitException;
 import br.com.fiap.exception.EntityNotFoundException;
+import br.com.fiap.singleton.EntityManagerFactorySingleton;
 
 public class MainCrudTest {
 
