@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3B2825F1-C125-2618-83F5-02F6DFB3D251" containerWithKeyObject="F38A3489-6872-A19B-0861-8693502B31B3" localFKIndex="FA209FD0-07EF-A0DD-DD5B-EC737BC15E66" name="USER_CHAIR_FK">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
+<generatorID>32C4A232-9050-ED8C-38A4-6D36215D3AE7</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<referredTableLongName>CHAIR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3080C55D-9B84-FA62-B35B-81BB01C23ABF</referredTableID>
+<keyObject>50B1DBF9-ADD8-726E-E473-CCDD020C4B53</keyObject>
+<referredKeyID>50B1DBF9-ADD8-726E-E473-CCDD020C4B53</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_chair</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

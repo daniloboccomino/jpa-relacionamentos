@@ -28,6 +28,21 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cd_chair" id="85C2FAFD-787A-58A6-A24A-EBC3B5574773">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-08 17:40:53 UTC</createdTime>
+<generatorID>32C4A232-9050-ED8C-38A4-6D36215D3AE7</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>F3776602-3703-02A6-6DC3-3CDB33F4B4BA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ds_email" id="6078B62D-8F49-C956-BAFF-08305A329D7E">
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:42:54 UTC</createdTime>
@@ -113,8 +128,9 @@
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:42:51 UTC</createdTime>
 <ownerDesignName>posture_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

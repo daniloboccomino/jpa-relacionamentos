@@ -28,6 +28,21 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cd_user" id="916037A1-C19F-5505-F1DA-0700C1A03F8D">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:10:30 UTC</createdTime>
+<generatorID>4E887069-417D-10A4-2060-A37CC57452F9</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="nr_wrong_posture" id="D667AEE5-06ED-EFAE-176A-DCE1D7904684">
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:58:24 UTC</createdTime>
@@ -82,29 +97,15 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cd_user" id="916037A1-C19F-5505-F1DA-0700C1A03F8D">
-<createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:10:30 UTC</createdTime>
-<generatorID>4E887069-417D-10A4-2060-A37CC57452F9</generatorID>
-<ownerDesignName>posture_model</ownerDesignName>
-<engineerTo>
-<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
-</engineerTo>
-<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2A9C7DEE-003A-D9F2-8F56-CC4D4C9D4384" name="DAILY_SUMMARY PK">
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:58:23 UTC</createdTime>
 <ownerDesignName>posture_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

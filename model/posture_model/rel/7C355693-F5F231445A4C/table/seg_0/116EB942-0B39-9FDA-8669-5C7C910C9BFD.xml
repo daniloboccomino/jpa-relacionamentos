@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D13C935C-128F-7CB7-1956-1DBA0824D7DF" name="TIP_POSTURE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="116EB942-0B39-9FDA-8669-5C7C910C9BFD" name="TIP_POSTURE">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>D82A2E61-63CC-9B37-6342-750E1AA1EC68</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cd_tip" id="5EF5EA3A-B4D7-E717-0C72-A15471975FCA">
+<Column name="cd_tip" id="AB0CDCF4-1C21-EA92-3A79-7A0C2E7E7796">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>9928B5C2-C037-9B7F-98AA-28EC9C859AF6</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -21,12 +21,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2F684552-0475-8F2B-02C5-336793766C07" referredColumn="9047D47D-E969-D70C-849F-253BBDBA4A28"/>
+<colAssociation fkAssociation="0A6ED1DB-FE52-D74C-112C-CF6F8F315FD1" referredColumn="22E76257-72E6-92D9-1D0E-D4DD709DE833"/>
 </associations>
 </Column>
-<Column name="cd_posture" id="C5A61A0D-F02F-EB24-988B-D3269A284820">
+<Column name="cd_posture" id="852C899C-B4FF-2B51-79D6-F058AC872156">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>CE8518D4-D970-12FD-CDF0-CA1B01679430</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -37,31 +37,31 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1A5C0D5C-7410-7616-FEBB-5918A85B1A5E" referredColumn="D0ACB345-FD46-452F-AAE7-42B88EA15176"/>
+<colAssociation fkAssociation="B3EE1D36-CB5F-7BD8-8BE3-D97AE519D858" referredColumn="4572E7DF-0C8C-7F0A-F758-9527659ACC92"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="D8B2C36C-FF2F-30A7-F308-B3A5A926948C" name="POSTURE_TIP_FK">
+<ind_PK_UK id="7F5506BA-C595-81C1-4356-6F79889AE4C5" name="POSTURE_TIP_FK">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>73F68C30-736C-EE76-7E92-55DF28386AFA</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5EF5EA3A-B4D7-E717-0C72-A15471975FCA"/>
+<colUsage columnID="AB0CDCF4-1C21-EA92-3A79-7A0C2E7E7796"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="B1CC251D-C9AC-4F59-5F70-25278F54FAD9" name="TIP_POSTURE_FK">
+<ind_PK_UK id="19AF8B21-99D2-05EA-EBA1-BC65324D5509" name="TIP_POSTURE_FK">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>B2042708-1EDC-FD9A-10CA-9CC68F7B6F52</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C5A61A0D-F02F-EB24-988B-D3269A284820"/>
+<colUsage columnID="852C899C-B4FF-2B51-79D6-F058AC872156"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

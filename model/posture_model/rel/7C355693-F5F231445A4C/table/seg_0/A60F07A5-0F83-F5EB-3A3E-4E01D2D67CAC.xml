@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C6D4866-B5E2-624E-EA85-BED754FF0515" name="POSTURE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A60F07A5-0F83-F5EB-3A3E-4E01D2D67CAC" name="POSTURE">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>5559EC83-E21B-2D85-B10B-89C9A6C3D424</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cd_posture" id="D0ACB345-FD46-452F-AAE7-42B88EA15176">
+<Column name="cd_posture" id="4572E7DF-0C8C-7F0A-F758-9527659ACC92">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>E640556E-BB01-FA94-8757-8E8F4CC18E25</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,32 +20,9 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ds_position" id="3F0FDF54-1AAC-1705-9C59-8990497EF4FC">
+<Column name="cd_user" id="6E6D99AE-9149-53A7-8746-ED806055B1FC">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
-<generatorID>E80537D2-0168-EE57-5745-0D8DF01913A4</generatorID>
-<ownerDesignName>posture_model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="dt_change_time" id="98EB2B77-94AC-EC57-68B6-EA3C1FDC6F96">
-<createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
-<generatorID>C84F9A24-55DF-CB15-E784-526A9390EA86</generatorID>
-<ownerDesignName>posture_model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="cd_user" id="672B32CF-963F-815F-AFC0-C6219730D2DE">
-<createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>150C7F55-904F-1D99-2008-B6BC151849B3</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -56,32 +33,55 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="1DDC39D6-5893-BD05-5C10-D9B8639FA89C" referredColumn="292A68C2-F3E1-D5E3-76C6-88A51C5D61E2"/>
+<colAssociation fkAssociation="00097ABD-3BA9-4B86-04ED-307658FF4D4D" referredColumn="B9ED2140-2BAE-DA92-6C4D-79E5CBB030CB"/>
 </associations>
+</Column>
+<Column name="ds_position" id="C67B1B36-F57E-D286-6F0B-5624E6CFF9A6">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
+<generatorID>E80537D2-0168-EE57-5745-0D8DF01913A4</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_change_time" id="9AF6EBB2-8E3E-9401-6929-76821AAD45A9">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
+<generatorID>C84F9A24-55DF-CB15-E784-526A9390EA86</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="C7E0EC3F-B95F-CA8F-A014-3EE47CF65DAC" name="POSTURE_PK">
+<ind_PK_UK id="619C481E-8212-3AFC-1819-C3228B807C9F" name="POSTURE_PK">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>E9BB2796-E404-EBB2-DABB-689680687D82</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="D0ACB345-FD46-452F-AAE7-42B88EA15176"/>
+<colUsage columnID="4572E7DF-0C8C-7F0A-F758-9527659ACC92"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E82A0914-3A9F-B716-8EEB-F5CF9AC0A1EB" name="POSTURE_USER_FK">
+<ind_PK_UK id="C9B7A864-8890-A457-C6D6-1AECF4039624" name="POSTURE_USER_FK">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>81681DE6-19CB-70FF-DE74-2D7E22EEE8E8</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="672B32CF-963F-815F-AFC0-C6219730D2DE"/>
+<colUsage columnID="6E6D99AE-9149-53A7-8746-ED806055B1FC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

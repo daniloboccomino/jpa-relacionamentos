@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="93CED84A-265F-1C72-2F16-6CC1D375B377" name="TIP">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EF84F304-4DD5-68B6-BD91-076ABCFB5986" name="TIP">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>73FB343F-0DCE-64F8-6BAC-B708F1ADB710</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cd_tip" id="9047D47D-E969-D70C-849F-253BBDBA4A28">
+<Column name="cd_tip" id="22E76257-72E6-92D9-1D0E-D4DD709DE833">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>EDE687C5-A2BF-0A6F-2F49-2A94548AAA64</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,9 +20,9 @@
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ds_tip" id="8C3A0B0E-B3C0-7674-CA42-2A228B93F8B0">
+<Column name="ds_tip" id="3EF9F603-9A72-1CDE-DB31-D12E804F8F6F">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>528CE923-12D2-FC68-2A2B-96DD45813A1F</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -33,16 +33,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="4C089288-1B22-E4E8-CE09-CBB793FA2AC9" name="TIP_PK">
+<ind_PK_UK id="A989D749-18A1-B336-6DF8-C5C1C647CAB4" name="TIP_PK">
 <createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:26:13 UTC</createdTime>
+<createdTime>2021-05-08 18:00:22 UTC</createdTime>
 <generatorID>67BFA696-1E25-E384-27A8-AA27B65CAA9A</generatorID>
 <ownerDesignName>posture_model</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9047D47D-E969-D70C-849F-253BBDBA4A28"/>
+<colUsage columnID="22E76257-72E6-92D9-1D0E-D4DD709DE833"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

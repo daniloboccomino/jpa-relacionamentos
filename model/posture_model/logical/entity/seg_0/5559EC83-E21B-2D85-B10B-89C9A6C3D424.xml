@@ -28,6 +28,21 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="cd_user" id="150C7F55-904F-1D99-2008-B6BC151849B3">
+<createdBy>daniloboccomino</createdBy>
+<createdTime>2021-04-17 16:11:16 UTC</createdTime>
+<generatorID>81681DE6-19CB-70FF-DE74-2D7E22EEE8E8</generatorID>
+<ownerDesignName>posture_model</ownerDesignName>
+<engineerTo>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+</engineerTo>
+<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="ds_position" id="E80537D2-0168-EE57-5745-0D8DF01913A4">
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:54:46 UTC</createdTime>
@@ -53,29 +68,15 @@
 <logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cd_user" id="150C7F55-904F-1D99-2008-B6BC151849B3">
-<createdBy>daniloboccomino</createdBy>
-<createdTime>2021-04-17 16:11:16 UTC</createdTime>
-<generatorID>81681DE6-19CB-70FF-DE74-2D7E22EEE8E8</generatorID>
-<ownerDesignName>posture_model</ownerDesignName>
-<engineerTo>
-<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
-</engineerTo>
-<referedAttribute>488F33D1-22C3-20DA-3DA9-D286BEA71D6B</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="E9BB2796-E404-EBB2-DABB-689680687D82" name="POSTURE PK">
 <createdBy>daniloboccomino</createdBy>
 <createdTime>2021-04-17 15:54:43 UTC</createdTime>
 <ownerDesignName>posture_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="true"/>
+<item key="7C355693-2CED-C87A-BE1F-F5F231445A4C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
