@@ -46,13 +46,13 @@ public class DailySummary {
 	@Column(name = "nr_correct_posture", nullable = false, scale = 2, precision = 5)
 	private double correctPosture;
 	
-	@Column(name = "dt_date", nullable = false)
-	@Temporal(TemporalType.TIMESTAMP)
 	@CreationTimestamp
+	@Temporal(TemporalType.DATE)
+	@Column(name = "dt_date", updatable = false)
 	private Calendar date;
 	
 	@ManyToOne
-	@JoinColumn(name = "cd_user", nullable = false)
+	@JoinColumn(name = "cd_user")
 	private User user;
 
 	

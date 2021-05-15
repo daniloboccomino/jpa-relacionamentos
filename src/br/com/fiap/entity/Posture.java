@@ -47,13 +47,13 @@ public class Posture {
 	@Enumerated(EnumType.STRING)
 	private Position position;
 	
-	@Column(name = "dt_change_time", nullable = false)
-	@Temporal(TemporalType.TIMESTAMP)
 	@CreationTimestamp
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name = "dt_change_time", updatable = false)
 	private Calendar changeTime;
 	
 	@ManyToOne
-	@JoinColumn(name = "cd_user", nullable = false)
+	@JoinColumn(name = "cd_user")
 	private User user;
 	
 	@ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
@@ -67,17 +67,15 @@ public class Posture {
 		super();
 	}
 
-	public Posture(Position position, Calendar changeTime) {
+	public Posture(Position position) {
 		super();
 		this.position = position;
-		this.changeTime = changeTime;
 	}
 
-	public Posture(int id, Position position, Calendar changeTime) {
+	public Posture(int id, Position position) {
 		super();
 		this.id = id;
 		this.position = position;
-		this.changeTime = changeTime;
 	}
 	
 	

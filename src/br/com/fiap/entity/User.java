@@ -64,7 +64,7 @@ public class User {
 	private List<DailySummary> dailySummaries;
 	
 	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-	@JoinColumn(name = "cd_chair", nullable = false)
+	@JoinColumn(name = "cd_chair")
 	private Chair chair;
 	
 	
